@@ -20,7 +20,10 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'email_verified_at', // Fillable since we will manually add it on Sign on
         'password',
+        'google_id', // Added
+        'avatar', // Added
     ];
 
     /**
