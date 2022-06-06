@@ -19,7 +19,7 @@ function SignIn() {
             })
             .then((data) => setLoginUrl( data.url ))
             .catch((error) => console.error(error));
-    });
+    }, []);
 
     return (
         <div>
